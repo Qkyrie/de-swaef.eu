@@ -1,4 +1,3 @@
-de-swaef.com
-============
+### De Swaef Website
 
-Development of de-swaef.com
+this is the website that's being hosted on www.de-swaef.com. 
