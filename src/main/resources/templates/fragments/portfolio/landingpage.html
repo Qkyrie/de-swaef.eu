@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <div th:fragment="summary" class="col-md-4 col-sm-6 portfolio-item">
-    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+    <a href="#landingpage" class="portfolio-link" data-toggle="modal">
         <div class="portfolio-hover">
             <div class="portfolio-hover-content">
                 <i class="fa fa-home fa-3x"></i>
@@ -15,6 +15,44 @@
         <h4>This landing page</h4>
 
         <p class="text-muted">Created with Spring Boot and Thymeleaf.</p>
+    </div>
+</div>
+
+<!-- Devstack Modal -->
+<div th:fragment="details" class="portfolio-modal modal fade" id="landingpage" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>An Open Source Development Stack</h2>
+
+                        <p class="item-intro text-muted">A freedom of choice.</p>
+                        <img class="img-responsive img-centered" src="img/portfolio/website.png" alt=""/>
+
+                        <p>
+                            This website was created in just a few hours using Spring Boot, Thymeleaf and a template. <br />
+                            Not only does it feature the frontend, which you are browsing now, it also features an admin component, featuring
+                            all kinds of fancy charts to see who is visiting my site and when.
+                        </p>
+
+
+                            <p>Sources for this
+                        can be found on <a href="https://github.com/qkyrie/de-swaef.com">My Github</a></p>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close This
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
