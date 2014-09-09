@@ -34,10 +34,9 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile("org.apache.commons:commons-lang3:3.0")
-    compile("mysql:mysql-connector-java:5.1.26")
+    //compile("mysql:mysql-connector-java:5.1.26")
     compile("com.jolbox:bonecp:0.8.0.RELEASE")
-
-    testCompile("com.h2database:h2")
+    compile("com.h2database:h2")
     testCompile('org.easytesting:fest-assert:1.4')
 }
 
