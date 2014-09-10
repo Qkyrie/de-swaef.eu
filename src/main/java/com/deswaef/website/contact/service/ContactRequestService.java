@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * User: Quinten
  * Date: 9-9-2014
@@ -29,5 +31,10 @@ public class ContactRequestService {
                 .setPhone(requestDto.getPhone())
                 .setMessage(requestDto.getMessage())
         );
+    }
+
+    @Transactional(readOnly = true)
+    public List<ContactRequest> findAll() {
+        return repository.findAll();
     }
 }

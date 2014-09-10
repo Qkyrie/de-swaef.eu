@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -36,4 +38,10 @@ public class ContactRestController {
     public ResponseEntity<ContactRequest> doRequest(@ModelAttribute ContactRequestDtoImpl contactRequestDto) {
         return new ResponseEntity<>(requestService.request(contactRequestDto), HttpStatus.OK);
     }
+
+    @RequestMapping(method = GET, value = "/admin/findAll")
+    public List<ContactRequest> findAllRequests() {
+        return requestService.findAll();
+    }
+
 }
