@@ -27,7 +27,7 @@ group = 'qkyrie'
 jar {
     group = 'com.de-swaef'
 	baseName = 'website'
-	version =  '1.0.0-SNAPSHOT'
+	version =  '1.0.0'
 }
 
 idea {
@@ -47,7 +47,7 @@ task "fullBuild" {
 
 repositories {
     mavenCentral()
-    maven { url "http://repo.spring.io/libs-milestone" }
+    maven { url "http://repo.spring.io/release" }
 }
 
 dependencies {
