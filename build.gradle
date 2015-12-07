@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.2.7.RELEASE'
+        springBootVersion = '1.3.0.RELEASE'
     }
     repositories {
         mavenLocal()
@@ -27,7 +27,7 @@ group = 'qkyrie'
 jar {
     group = 'com.de-swaef'
 	baseName = 'website'
-	version =  '1.0.1'
+	version =  '1.0.2'
 }
 
 idea {
@@ -62,16 +62,8 @@ dependencies {
     testCompile('org.easytesting:fest-assert:1.4')
 }
 
-task wrapper(type: Wrapper) {
-	gradleVersion = '1.11'
-}
-
-project.gradle.projectsEvaluated {
-    applicationDefaultJvmArgs = ["-Dspring.profiles.active=${project.gradle.startParameter.systemPropertiesArgs['spring.profiles.active']}"]
-}
-
 task buildDocker(type: Docker, dependsOn: build) {
-    push = true
+    push = false
     applicationName = jar.baseName
     dockerfile = file('src/main/docker/Dockerfile')
     doFirst {
@@ -80,4 +72,8 @@ task buildDocker(type: Docker, dependsOn: build) {
             into stageDir
         }
     }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
 }

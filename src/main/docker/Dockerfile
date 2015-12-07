@@ -1,5 +1,5 @@
 FROM java:8
 VOLUME /tmp
-ADD website-1.0.0.jar app.jar
+ADD website-1.0.2.jar app.jar
 RUN bash -c 'touch /app.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
