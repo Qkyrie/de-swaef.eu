@@ -17,17 +17,19 @@
 package com.deswaef.website;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.system.ApplicationPidFileWriter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@Configuration
-@EnableAutoConfiguration
 @EnableJpaRepositories
-@ComponentScan
+@SpringBootApplication
 public class WebsiteApplication {
 	public static void main(String[] args) throws Exception {
-        SpringApplication.run(WebsiteApplication.class);
+        SpringApplication application = new SpringApplication(WebsiteApplication.class);
+        application.addListeners(new ApplicationPidFileWriter());
+        application.run();
     }
 }
