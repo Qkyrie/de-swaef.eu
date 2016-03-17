@@ -64,6 +64,10 @@ dependencies {
     testCompile('org.easytesting:fest-assert:1.4')
 }
 
+springBoot {
+    executable = true
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.3'
 }
