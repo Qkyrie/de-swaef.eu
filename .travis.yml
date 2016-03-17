@@ -1,4 +1,16 @@
 language: java
-
 jdk:
-  - oraclejdk8
+- oraclejdk8
+cache:
+  directories:
+  - ".autoconf"
+  - "$HOME/.m2"
+deploy:
+  provider: releases
+  api_key:
+    secure: J4hfgai6Oclec7sHb5HvEgytgwscbkVblAa+Lf82FbzGH2C5U+4BEGF9fn1xAiqGVNBWQLdiVKthxlpEbfwxB9lzrYbXxrILjY3lyyErx3DB9NrK99g5UffMAFlrpF7+3W4qCORfDRqN+1gPe7b//bEc24uqjNNjkWYJjv5/EvztN84xneO6VX1p02sbrPxXvqJ+HzuT5+Sx1aZBlhUgdAda9dYiEo4k4FUQvrdk32Wi7V1Z4P4HeL2+4us9IBx4pIKlOS/BRoML/pEsLd0U2C42DB0P2OIl0vGjDl01l3sCioczEeqqj5yaBYoVcvyvzXT4T58lxV31ql3bMO7tycN1eKX6Wf6yLFP10r/XhJcxZdQ/CLyUg0aQ7jbR07urQUMGr/36tiVulxZGSK+9M4Iv1g6xPgTLW1oZ7dccVzi6Ew8wymDsqgtmlwslCVudTKniHpLLM8GpNv+XrzdGFx2I0k/z80fPAs4BI1pGMV6U/mPXmK2gxWcgQHV3iXd3nS7qvwTM5Z5XETgc25xTIAwDHFcXPVEjC4KHvPka5AmchksF04747seHtEmE8nCkVjiRMgX7Ee0IuykRL8O/lXTPnSNqv6BnbRJtfWZEeKVbchEF8Y6mHxcKljZgfY2XF9m2yuTnxl+4XcNPggHRWJKu8KEA9LVTyu2nv5SnAwU=
+  file: build/libs/website.jar
+  on:
+    repo: Qkyrie/de-swaef.eu
+    branch: master
+    tags: true
