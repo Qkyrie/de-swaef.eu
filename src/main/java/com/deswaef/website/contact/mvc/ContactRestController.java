@@ -4,6 +4,7 @@ import com.deswaef.website.contact.model.ContactRequest;
 import com.deswaef.website.contact.mvc.dto.ContactRequestDtoImpl;
 import com.deswaef.website.contact.service.ContactRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ModelAttribute;
