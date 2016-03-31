@@ -17,9 +17,15 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            var token = $("meta[name='_csrf']").attr("content");
+            var header = $("meta[name='_csrf_header']").attr("content");
+
             $.ajax({
                 url: "././rest/contact",
                 type: "POST",
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader(header, token);
+                },
                 data: {
                     name: name,
                     phone: phone,
