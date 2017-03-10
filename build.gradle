@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '1.3.3.RELEASE'
+        springBootVersion = '1.5.2.RELEASE'
     }
     repositories {
         mavenLocal()
@@ -16,19 +16,19 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-version = "1.3.4-SNAPSHOT"
+version = "1.4.0-SNAPSHOT"
 
 group = 'qkyrie'
 
 jar {
     group = 'com.de-swaef'
-	baseName = 'website'
-	version =  null
+    baseName = 'website'
+    version = null
 }
 
 idea {
@@ -52,7 +52,7 @@ repositories {
 }
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")

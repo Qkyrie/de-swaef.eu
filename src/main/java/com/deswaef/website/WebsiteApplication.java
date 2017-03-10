@@ -17,19 +17,12 @@
 package com.deswaef.website;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.actuate.system.ApplicationPidFileWriter;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.boot.system.ApplicationPidFileWriter;
 
-@EnableJpaRepositories
 @SpringBootApplication
-@EnableAsync
 public class WebsiteApplication {
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         SpringApplication application = new SpringApplication(WebsiteApplication.class);
         application.addListeners(new ApplicationPidFileWriter());
         application.run();
