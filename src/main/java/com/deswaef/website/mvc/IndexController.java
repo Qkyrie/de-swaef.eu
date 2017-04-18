@@ -17,12 +17,6 @@ public class IndexController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String index() {
-        return "index";
-    }
-
-    @RequestMapping(value = "/new")
-    public String newIndex() {
         return "index2";
     }
-
 }
