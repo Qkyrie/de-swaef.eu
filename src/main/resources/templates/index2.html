@@ -1,0 +1,707 @@
+<!DOCTYPE html >
+<!--[if IE 8]>
+<html lang="en" class="ie8"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+> <!--<![endif]-->
+<head>
+    <title>Creative | Unify - Responsive Website Template</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css'
+          href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'/>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/unify/css/style.css}"/>
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" th:href="@{/assets/unify/css/headers/header-v6.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/unify/css/footers/footer-v1.css}"/>
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/animate.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/line-icons/line-icons.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/font-awesome/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/revolution-slider/rs-plugin/css/settings.css}"
+          type="text/css" media="screen"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" th:href="@{/assets/unify/plugins/revolution-slider/rs-plugin/css/settings-ie8.css}"
+          type="text/css" media="screen"/><![endif]-->
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" th:href="@{/assets/unify/css/custom.css}"/>
+</head>
+
+<body class="header-fixed">
+<div class="wrapper">
+    <!--=== Header v6 ===-->
+    <div class="header-v6 header-classic-white header-sticky">
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+
+                </div>
+                <div th:include="decorator/navigation :: topnav" th:remove="tag"></div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v6 ===-->
+
+    <!--=== Slider ===-->
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <!-- SLIDE -->
+                <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
+                    data-title="Slide 1">
+                    <!-- MAIN IMAGE -->
+                    <img th:src="@{/assets/unify/img/sliders/7.jpg}"
+                         alt="darkblurbg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"/>
+
+                    <!-- LAYER -->
+                    <div class="tp-caption re-title-v1 sft start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="100"
+                         data-speed="1500"
+                         data-start="500"
+                         data-easing="Back.easeInOut"
+                         data-endeasing="Power1.easeIn"
+                         data-endspeed="300">
+                        Hi, I'm Quinten!
+                    </div>
+                    <!-- END LAYER -->
+
+                    <!-- LAYER -->
+                    <div class="tp-caption re-text-v1 sft"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="200"
+                         data-speed="1400"
+                         data-start="2000"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        and welcome to my digitalized life!
+                    </div>
+                    <!-- END LAYER -->
+                </li>
+                <!-- END SLIDE -->
+
+                <!-- SLIDE -->
+                <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
+                    data-title="Slide 2">
+                    <!-- MAIN IMAGE -->
+                    <img th:src="@{/assets/unify/img/sliders/9.jpg}"
+                         alt="darkblurbg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat"/>
+
+                    <!-- LAYER -->
+                    <div class="tp-caption re-title-v2 sft"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="100"
+                         data-speed="1400"
+                         data-start="1000"
+                         data-easing="easeOutBack"
+                         data-endspeed="300"
+                         data-endeasing="easeInQuad"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        We're enabling
+                    </div>
+
+                    <!-- LAYER -->
+                    <div class="tp-caption re-text-v1 sft"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="150"
+                         data-speed="1600"
+                         data-start="2000"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        Cindercloud builds solutions for common architectural problems.
+                    </div>
+                </li>
+                <!-- END SLIDE -->
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+    </div>
+    <!--=== End Slider ===-->
+
+    <div class="container content-sm">
+        <div class="text-center margin-bottom-50">
+            <h2 class="title-v2 title-center">QDS Consult </h2>
+            <p class="space-lg-hor">My <span class="color-green">consultancy</span> company.</p>
+        </div>
+
+        <div class="row content-boxes-v4">
+            <div class="col-md-4 md-margin-bottom-40">
+                <i class="pull-left fa fa-code"></i>
+                <div class="content-boxes-in-v4">
+                    <h2>Code</h2>
+                    <p>As a developer, code is what drives you. Keeping up with the newest frameworks, libraries and
+                        tools is something I do every single day.</p>
+                </div>
+            </div>
+            <div class="col-md-4 md-margin-bottom-40">
+                <i class="pull-left fa fa-lock"></i>
+                <div class="content-boxes-in-v4">
+                    <h2>Security</h2>
+                    <p>
+                        Next to Software Development, I severely focus on secure coding standards and libraries.
+                        Most of my side projects have something to do with penetration testing, web application
+                        vulnerability analysis or cryptography.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <i class="pull-left fa fa-arrows"></i>
+                <div class="content-boxes-in-v4">
+                    <h2>Full stack</h2>
+                    <p>Creating full stack applications, integrating with existing components or
+                        maintaining and building on top of existing code.</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row content-boxes-v4">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <i class="pull-left fa fa-arrows"></i>
+                <div class="content-boxes-in-v4">
+                    <h2>Blockchain</h2>
+                    <p>In my spare time, and for a startup, I also investigate and create solutions based on Blockchain
+                        technologies.</p>
+                    <a href="https://fundrequest.io">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <i class="pull-left fa fa-arrows"></i>
+                <div class="content-boxes-in-v4">
+                    <h2>Spring</h2>
+                    <p>In my spare time, and for a startup, I also investigate and create solutions based on Blockchain
+                        technologies.</p>
+                    <a href="https://fundrequest.io">Learn More</a>
+                </div>
+                <div class="content-boxes-in-v4">
+                    <h2>Deep Learning</h2>
+                    <p>In my spare time, and for a startup, I also investigate and create solutions based on Blockchain
+                        technologies.</p>
+                    <a href="https://fundrequest.io">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-grey content-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="responsive-video margin-bottom-30">
+                        <iframe src="http://player.vimeo.com/video/47911018" width="530" height="300" frameborder="0"
+                                webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen"
+                                allowFullScreen="allowFullScreen"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="title-v2">WATCH ABOUT US</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
+                        to repeat predefined chunks as necessary, making this the first true generator on the
+                        Internet.</p><br/>
+                    <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-dark">Read More</a>
+                    <a href="#" class="btn-u">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-sm">
+        <div class="text-center margin-bottom-50">
+            <h2 class="title-v2 title-center">READ ABOUT UNIFY</h2>
+            <p class="space-lg-hor">If you are going to use a passage of Lorem Ipsum, <span class="color-green">you need to</span>
+                be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators
+                on the Internet tend to repeat predefined chunks as necessary, making this the first true <span
+                        class="color-green">generator</span> on the Internet.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 md-margin-bottom-40">
+                <div class="thumbnails-v1">
+                    <div class="thumbnail-img">
+                        <img class="img-responsive"
+                             th:src="@{/assets/unify/img/masonry/blog2.jpg}" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <h3><a href="#">Business Opportunities</a></h3>
+                        <p>Donec id elit non mi porta gravida at eget metsit us. Fusce dapibus, justo sit amet risus
+                            etiam portapsum generators on the Internet tend to repeat predefined.</p>
+                        <p><a class="read-more" href="#">See More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 md-margin-bottom-40">
+                <div class="thumbnails-v1">
+                    <div class="thumbnail-img">
+                        <img class="img-responsive" th:src="@{/assets/unify/img/masonry/blog3.jpg}" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <h3><a href="#">Engage Customers With Unify</a></h3>
+                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                            embarrassing hidden in the middle of text, all the ipsum generators.</p>
+                        <p><a class="read-more" href="#">See More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnails-v1">
+                    <div class="thumbnail-img">
+                        <img class="img-responsive" th:src="@{/assets/unify/img/masonry/blog4.jpg}" alt=""/>
+                    </div>
+                    <div class="caption">
+                        <h3><a href="#">Empower People, HCM</a></h3>
+                        <p>Donec id elit non mi porta gravida at eget metsit us. Fusce dapibus, justo sit amet risus
+                            etiam portapsum generators on the Internet tend to repeat predefined.</p>
+                        <p><a class="read-more" href="#">See More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-counter-v1 parallaxBg">
+        <div class="container">
+            <h2 class="title-v2 title-light title-center">SOME FACTS AND FIGURES</h2>
+            <p class="space-xlg-hor text-center color-light">If you are going to use a passage of Lorem Ipsum, you need
+                to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                generators on the Internet tend to repeat predefined chunks as necessary.</p>
+
+            <div class="margin-bottom-40"></div>
+
+            <div class="row margin-bottom-10">
+                <div class="col-sm-3 col-xs-6 md-margin-bottom-10">
+                    <div class="counters">
+                        <span class="counter">10629</span>
+                        <h4>Users</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6 md-margin-bottom-10">
+                    <div class="counters">
+                        <span class="counter">277</span>
+                        <h4>Projects</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">78</span>
+                        <h4>Team Members</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">109</span>
+                        <h4>Awards</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-sm">
+        <div class="row">
+            <div class="col-sm-6 content-boxes-v3 content-boxes-v3-right sm-margin-bottom-30">
+                <div class="margin-bottom-30">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-trophy"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Innovation Leader</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30">
+                    <i class="icon-custom icon-md rounded-x icon-bg-darker icon-line icon-directions"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Best Solutions &amp; Approaches</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-rocket"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">SEO &amp; Advertising</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 content-boxes-v3">
+                <div class="clearfix margin-bottom-30">
+                    <i class="icon-custom icon-md rounded-x icon-bg-darker icon-line icon-bar-chart"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Analysis &amp; Consulting</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+                <div class="clearfix margin-bottom-30">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line icon-badge"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Quality Service &amp; Support</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <i class="icon-custom icon-md rounded-x icon-bg-darker icon-line icon-envelope"></i>
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Email Marketing</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-unstyled row portfolio-box-v1">
+        <li class="col-md-3 col-sm-6">
+            <img class="img-responsive" th:src="@{/assets/unify/img/main/img12.jpg}" alt=""/>
+            <div class="portfolio-box-v1-in">
+                <h3>Collective Package</h3>
+                <p>Web Design, Mock-up</p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-6">
+            <img class="img-responsive" th:src="@{/assets/unify/img/main/img4.jpg}" alt=""/>
+            <div class="portfolio-box-v1-in">
+                <h3>Ahola Company</h3>
+                <p>Brand Design, UI</p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-6">
+            <img class="img-responsive" th:src="@{/assets/unify/img/main/img7.jpg}" alt=""/>
+            <div class="portfolio-box-v1-in">
+                <h3>Unify Project</h3>
+                <p>Web Development, HTML5</p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-6">
+            <img class="img-responsive" th:src="@{/assets/unify/img/main/img17.jpg}" alt=""/>
+            <div class="portfolio-box-v1-in">
+                <h3>Stand There</h3>
+                <p>Brand Design, UI</p>
+                <a class="btn-u btn-u-sm btn-brd btn-brd-hover btn-u-light" href="#">Read More</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="bg-grey content-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 md-margin-bottom-40">
+                    <h2 class="title-v2">WE ARE CREATIVE</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.</p>
+                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
+                        to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                        It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
+                        structures.</p><br/>
+                    <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-dark">Read More</a>
+                    <a href="#" class="btn-u">Purchase Now</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" th:src="@{/assets/unify/img/mockup/mockup1.png}" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container team-v1 content-sm">
+        <div class="margin-bottom-40 text-center">
+            <h2 class="title-v2 title-center">MEET OUR TEAM</h2>
+            <p>We <strong>meet</strong> and get to know you. You tell us and we listen. <br/>
+                We build your website to realise your vision and we <strong>deliver</strong> the ready product.</p>
+        </div>
+
+        <ul class="list-unstyled row">
+            <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
+                <div class="team-img">
+                    <img class="img-responsive" th:src="@{/assets/unify/img/team/img1-md.jpg}" alt=""/>
+                    <ul>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <h3>John Brown</h3>
+                <h4>/ Technical Director</h4>
+                <p>Technical Director mi porta gravida at eget metus id elit mi egetine...</p>
+            </li>
+            <li class="col-sm-3 col-xs-6 md-margin-bottom-30">
+                <div class="team-img">
+                    <img class="img-responsive" th:src="@{/assets/unify/img/team/img2-md.jpg}" alt=""/>
+                    <ul>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <h3>Tina Krueger</h3>
+                <h4>/ Lead Designer</h4>
+                <p>Lead Designer mi porta gravida at eget metus id elit mi egetine...</p>
+            </li>
+            <li class="col-sm-3 col-xs-6">
+                <div class="team-img">
+                    <img class="img-responsive" th:src="@{/assets/unify/img/team/img3-md.jpg}" alt=""/>
+                    <ul>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <h3>David Case</h3>
+                <h4>/ Web Developer</h4>
+                <p>Web Developer in Unify agency porta gravida at eget metus id elit...</p>
+            </li>
+            <li class="col-sm-3 col-xs-6">
+                <div class="team-img">
+                    <img class="img-responsive" th:src="@{/assets/unify/img/team/img5-md.jpg}" alt=""/>
+                    <ul>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-custom icon-sm rounded-x fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <h3>Kathy Reyes</h3>
+                <h4>/ Creative Designer</h4>
+                <p>Former Designer in Twitter non mi porta gravida at elit mi egetine...</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-grey content-sm">
+        <div class="container text-center">
+            <h2 class="title-v2 title-center">FIND MORE ABOUT US</h2>
+            <p class="space-lg-hor">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend
+                to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p><br/>
+            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-dark">Read About Us</a>
+            <a href="#" class="btn-u">View Our Portfolio</a>
+        </div>
+    </div>
+
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <a href="index.html"><img id="logo-footer" class="footer-logo"
+                                                  th:src="@{/assets/unify/img/logo2-default.png}" alt=""/></a>
+                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero
+                            tincidunt sodales.</p>
+                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat
+                            non arcu.</p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>Latest Posts</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="#">Incredible content</a>
+                                    <small>May 8, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">Best shoots</a>
+                                    <small>June 23, 2014</small>
+                                </li>
+                                <li>
+                                    <a href="#">New Terms and Conditions</a>
+                                    <small>September 15, 2014</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Latest -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>Contact Us</h2></div>
+                        <address class="md-margin-bottom-40">
+                            25, Lorem Lis Street, Orange <br/>
+                            California, US <br/>
+                            Phone: 800 123 3456 <br/>
+                            Fax: 800 123 3456 <br/>
+                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2015 &copy; All Rights Reserved.
+                            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Skype">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Dribbble">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" th:src="@{/assets/unify/plugins/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/jquery/jquery-migrate.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/bootstrap/js/bootstrap.min.js}"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" th:src="@{/assets/unify/plugins/back-to-top.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/smoothScroll.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/jquery.parallax.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/counter/waypoints.min.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/plugins/counter/jquery.counterup.min.js}"></script>
+<script type="text/javascript"
+        th:src="@{/assets/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js}"></script>
+<script type="text/javascript"
+        th:src="@{/assets/unify/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js}"></script>
+<!-- JS Customization -->
+<script type="text/javascript" th:src="@{/assets/unify/js/custom.js}"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" th:src="@{/assets/unify/js/app.js}"></script>
+<script type="text/javascript" th:src="@{/assets/unify/js/plugins/revolution-slider.js}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function () {
+		App.init();
+		App.initCounter();
+		App.initParallaxBg();
+		RevolutionSlider.initRSfullScreenOffset();
+	});
+</script>
+<!--[if lt IE 9]>
+<script th:src="@{/assets/unify/plugins/respond.js}"></script>
+<script th:src="@{/assets/unify/plugins/html5shiv.js}"></script>
+<script th:src="@{/assets/unify/plugins/placeholder-IE-fixes.js}"></script>
+<![endif]-->
+</body>
+</html>

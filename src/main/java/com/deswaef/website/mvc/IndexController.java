@@ -20,4 +20,9 @@ public class IndexController {
         return "index";
     }
 
+    @RequestMapping(value = "/new")
+    public String newIndex() {
+        return "index2";
+    }
+
 }
