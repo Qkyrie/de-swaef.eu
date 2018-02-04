@@ -5,7 +5,9 @@ cache:
   directories:
   - ".autoconf"
   - "$HOME/.m2"
+script: gradle build
 deploy:
+  skip_cleanup: true
   provider: releases
   api_key:
     secure: kmPFWSYvxYar7zoubdQZY37dvs/iq9iL/t67jD6Uz+RQk1m8BNzuKD5hm4sSADgU8WMUCM8ONV/OoXEaYANEDieytaFP3jsRxpJ6uRjaL7HSzsHfDLmaPsDV4rk19k+oBwhemTBkJQNQS+M2n2ew0F0fIcxKQRZ0nIDOvkkKcBZHJ0dkQ4G4x3XCt4Xuts6VrGg0q51TsqdjRfsbqaJ40xFuNqVBq2v5g2VM3sCndJIOMGzTLuC3cUXch6gJMeoGN3qQd1RDCVAHDOaO/Si4ULrGSJ2p/eTeLlqY625HsX6hpFyMbnQ+Oj7z62wjIo9TQOtK3XFIt/4DQe+2UsSP82hvU8nbhWlv7kHuANym9WZUGDI17UUaMiF9qy03sZ4StIHw+MrsMc92Hf+4+zwUT9mh+ZloCh0rBcu2DV0M6v5VJfmBDsBUgLEBcHYp8JfdlcxCoN2vpcDG7WZP8tunYwe8Sbt7duDuJ/D019YsBVYHjoQAUspvC6nO964UDrJQcBmBhns0oV+J7lx+tPrf7pHuZ2LCd9YNPfiSm6NLDigod9ercsqjeEBxQe3d4C2rdZgyscd+0qhYV1ZbIkObHF8qG5bsZfiZ/UXu6YyFtgrtyzo3I80wmEFaFslKKjfGQIq5b4nz3DO5f3NNZ5bXeTO0cHmMquEvnpJX+aO+pAE=
