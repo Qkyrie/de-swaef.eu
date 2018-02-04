@@ -3,3 +3,4 @@ build/
 .gradle/
 website.iml
 de-swaef.eu.iml
+application.pid
